@@ -15,7 +15,6 @@
   background-color: var(--appColor);
   display: flex;
   flex-direction: column;
-  gap: 6rem;
   overflow: hidden;
 }
 ::-webkit-scrollbar {
@@ -32,9 +31,11 @@
   border: none;
   font-weight: bold;
   font-size: 1rem;
+  transition: 0.3s;
 }
 .btn:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 .blur {
   background: rgba(253, 120, 43, 0.69);

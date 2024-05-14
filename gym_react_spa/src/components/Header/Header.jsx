@@ -1,60 +1,29 @@
 import "./Header.css";
-import { useState } from "react";
-import { Link } from "react-scroll";
 
 const Header = () => {
-  const mobile = window.innerWidth <= 768 ? true : false;
-  const [menuOpened, setMenuOpened] = useState(false);
   return (
-    <div className="header" id="home">
+    <header className="header">
       <img src="./logo.png" alt="logo" className="logo" />
-      {menuOpened === false && mobile === true ? (
-        <div
-          style={{
-            backgroundColor: "var(--appColor)",
-            padding: ".5rem",
-            borderRadius: "5px",
-          }}
-          onClick={() => {
-            setMenuOpened(true);
-          }}
-        >
-          <img
-            src="./bars.png"
-            alt="bars_menu"
-            style={{ width: "1.5rem", height: "1.5rem" }}
-          />
-        </div>
-      ) : (
-        <ul className="header-menu">
-          <li onClick={() => setMenuOpened(false)}>
-            <Link to="home" activeClass="active" spy={true} smooth={true}>
-              Home
-            </Link>
+      <nav className="nav">
+        <ul className="nav-menu">
+          <li className="nav-item">
+            <a href="#home">Home</a>
           </li>
-          <li onClick={() => setMenuOpened(false)}>
-            <Link to="programs" spy={true} smooth={true}>
-              Programs
-            </Link>
+          <li className="nav-item">
+            <a href="#programs">Programs</a>
           </li>
-          <li onClick={() => setMenuOpened(false)}>
-            <Link to="reasons" spy={true} smooth={true}>
-              Why Us
-            </Link>
+          <li className="nav-item">
+            <a href="#team">Team</a>
           </li>
-          <li onClick={() => setMenuOpened(false)}>
-            <Link to="plans" spy={true} smooth={true}>
-              Plans
-            </Link>
+          <li className="nav-item">
+            <a href="#plans">Plans</a>
           </li>
-          <li onClick={() => setMenuOpened(false)}>
-            <Link to="testimonials" spy={true} smooth={true}>
-              Testimonials
-            </Link>
+          <li className="nav-item">
+            <a href="#contact">Contact</a>
           </li>
         </ul>
-      )}
-    </div>
+      </nav>
+    </header>
   );
 };
 
