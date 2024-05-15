@@ -4,19 +4,22 @@ const Footer = () => {
   return (
     <div
       className="
-  Footer-container"
+  footer-container"
       id="footer"
     >
       <hr />
       <div className="footer">
         <div className="social-links">
-          <img src="facebook.png" alt="" />
-          <img src="youtube.png" alt="" />
-          <img src="instagram.png" alt="" />
+          <img src="facebook.png" alt="facebook logo" />
+          <img src="youtube.png" alt="youtube logo" />
+          <img src="instagram.png" alt="instagram logo" />
         </div>
         <div className="logo-f">
-          <img src="./logo.png" alt="" />
+          <a href="#home">
+            <img src="logo.png" alt="logo" className="logo" />
+          </a>
         </div>
+
         <div className="blur blur-f-1"></div>
         <div className="blur blur-f-2"></div>
       </div>

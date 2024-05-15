@@ -1,7 +1,7 @@
-.Footer-container {
+.footer-container {
   position: relative;
 }
-.Footer-container > hr {
+.footer-container > hr {
   border: 1px solid var(--lightgray);
 }
 .footer {

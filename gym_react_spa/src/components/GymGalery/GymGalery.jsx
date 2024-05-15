@@ -2,20 +2,20 @@ import "./GymGalery.css";
 
 const GymGalery = () => {
   return (
-    <div className="Reasons" id="reasons">
-      <div className="left-r">
-        <img src="./image1.png" alt="gym member" />
-        <img src="./image2.png" alt="gym member" />
-        <img src="./image3.jpg" alt="gym member" />
-        <img src="./image4.png" alt="gym member" />
+    <div className="gallery-container" id="team">
+      <div className="left-gallery">
+        <img src="./image1.png" alt="gym trainer" />
+        <img src="./image2.png" alt="gym trainer" />
+        <img src="./image3.jpg" alt="gym trainer" />
+        <img src="./image4.png" alt="gym trainer" />
       </div>
-      <div className="right-r">
+      <div className="right-gallery">
         <span>Our Trainers</span>
         <div>
           <span className="stroke-text">meet</span>
           <span> our team </span>
         </div>
-        <div className="details-r">
+        <div className="details-gallery">
           <div>
             <img src="./tick.png" alt=""></img>
             <span>

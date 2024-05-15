@@ -2,7 +2,7 @@ import "./Plans.css";
 import { plansData } from "../../../data/plansData.jsx";
 const Plans = () => {
   return (
-    <div className="plans-container">
+    <div className="plans-container" id="plans">
       <div className="blur blur-p-1"></div>
       <div className="blur blur-p-2"></div>
       <div className="programs-header" style={{ gap: "2rem" }}>

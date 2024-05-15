@@ -15,7 +15,7 @@
   background-color: var(--appColor);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  /* overflow-x: hidden; */
 }
 ::-webkit-scrollbar {
   display: none;

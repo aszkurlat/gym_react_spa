@@ -3,7 +3,7 @@ import { programsData } from "../../../data/programsData.jsx";
 
 const Programs = () => {
   return (
-    <div className="programs" id="programs">
+    <div className="programs-container" id="programs">
       {/* header */}
       <div className="programs-header">
         <span className="stroke-text">Explore Our </span>
