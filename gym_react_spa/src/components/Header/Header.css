@@ -27,6 +27,7 @@
   gap: 2.5rem;
   padding: 0;
   margin: 0;
+  border-radius: 8px;
 }
 
 .nav-item {
@@ -40,4 +41,38 @@
 
 .nav-item:hover {
   color: #ff9900;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 923px) {
+  .menu-icon {
+    display: block;
+  }
+  .header > :nth-child(2) {
+    position: fixed;
+    top: 1rem;
+    right: 0rem;
+    z-index: 99;
+  }
+  .nav-menu {
+    position: absolute;
+    right: 3.5rem;
+    top: 1rem;
+    width: 150%;
+    background: rgba(37, 37, 37, 0.788);
+    flex-direction: column;
+    padding: 0.8rem 1.3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    z-index: 99;
+    transition: all 400ms ease;
+  }
+  .nav-item {
+    font-size: 1.1rem;
+  }
+  .logo {
+    width: 5rem;
+  }
 }

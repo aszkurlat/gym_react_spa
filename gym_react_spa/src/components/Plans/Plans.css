@@ -83,11 +83,17 @@
   top: 10rem;
   right: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 854px) {
   .plans {
     flex-direction: column;
   }
   .plans > :nth-child(2) {
     transform: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .plan {
+    padding: 1.5rem;
+    width: 14rem;
   }
 }

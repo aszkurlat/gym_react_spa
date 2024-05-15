@@ -44,3 +44,8 @@
   filter: blur(150px);
   z-index: -9;
 }
+@media screen and (max-width: 923px) {
+  .App {
+    overflow: hidden;
+  }
+}
